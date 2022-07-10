@@ -1,0 +1,35 @@
+{
+	"name": "dbank-popup--top",
+	"version": "0.0.1",
+	"description": "dbank-popup--top",
+	"main": "dist/css/style.css",
+	"keywords": [
+		"style",
+		"scss",
+		"css",
+		"sass",
+		"html"
+	],
+	"files": [
+		"html",
+		"sass",
+		"assets",
+		"dist"
+	],
+	"author": "itzik.pop@gmail.com",
+	"license": "ISC",
+	"scripts": {
+		"assets": "ncp ./assets/ ./dist/",
+		"clean:dist": "rimraf assets/",
+		"scss:watch": "sass --watch --update --style=expanded sass:assets/css",
+		"scss:build": "sass --update --style=compressed sass:assets/css"
+	},
+	"devDependencies": {
+	},
+	"publishConfig": {},
+	"engines": {
+		"node": "^17.0.0"
+	},
+	"dependencies": {
+	}
+}
